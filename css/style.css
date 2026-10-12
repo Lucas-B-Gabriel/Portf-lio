@@ -132,6 +132,55 @@ button:disabled {
     font-weight: bold;
 }
 
+.item-formacao {
+    border-left: 4px solid var(--cor-principal); /* Barra lateral que lembra uma linha do tempo */
+    padding: 0.5rem 0 0.5rem 1.2rem;             /* Afasta o texto da barra */
+    margin-top: 1.8rem;                          /* Espaço entre uma formação e outra */
+}
+
+.item-formacao h2 {
+    color: #ffffff;
+    font-size: 1.3rem;
+}
+
+.instituicao {
+    font-weight: bold;                           /* Destaca o nome da instituição */
+}
+
+.periodo {
+    font-size: 0.9rem;
+    opacity: 0.8;                                /* Deixa a data mais discreta que o resto */
+}
+.grade-projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;          /* Espaço entre os cards, na horizontal e na vertical */
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: var(--cor-header);             /* Reaproveita a cor do header para manter a identidade */
+    padding: 1.5rem;
+    border-radius: 12px;
+    transition: transform 0.3s;                      /* Suaviza o movimento do hover */
+}
+
+.card:hover {
+    transform: translateY(-5px);                     /* Sobe o card 5px ao passar o mouse */
+}
+
+.card h2 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+}
+
+.card a {
+    display: inline-block;                           /* Permite aplicar margem em cima de um link */
+    margin-top: 1rem;
+    color: #e9d5ff;                                  /* Mesmo lilás claro do menu */
+    font-weight: bold;
+}
 @media (max-width: 600px) { /*Adicionando uma media query para telas menores que 600px*/
 
     header {

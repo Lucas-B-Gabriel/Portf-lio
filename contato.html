@@ -5,64 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-    <link rel="stylesheet" href="css/style.css">     <!-- Conecta o CSS à página. -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Conecta o CSS à página. -->
 </head>
 
- <script src="js/script.js"></script> <!-- Conecta o JavaScript à página. -->
+<script src="js/script.js"></script> <!-- Conecta o JavaScript à página. -->
 
 <body>
-        <header> <!--Cabeçalho do site, que contém o logo e o menu de navegação-->
-            <a href="index.html" class="logo"> Lucas Bernardo Gabriel </a>
-            <nav>
+    <header> <!--Cabeçalho do site, que contém o logo e o menu de navegação-->
+        <a href="index.html" class="logo"> Lucas Bernardo Gabriel </a>
+        <nav>
 
-                <ul>
-                    <li><a href="index.html">Sobre mim</a></li>
-                    <li><a href="formacao.html">Formação</a></li>
-                    <li><a href="projetos.html">Projetos</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
+            <ul>
+                <li><a href="index.html">Sobre mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
 
-            </nav>
+        </nav>
 
-        </header>
+    </header>
 
-        <main>
-            <section class="contato">
-                <h1>Entre em contato comigo</h1>
-                
-                <form id="form-contato" novalidate> <!-- Identificador do formulário de contato, com a propriedade novalidate para desativar a validação padrão do navegador-->
-                    <p>Preencha o formulário abaixo para entrar em contato comigo. Responderei o mais breve possível.</p>
-                    
-                        <div class="campo"></div>
-                             <label for="nome">Nome:</label>                     
-                              <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
-                              <span class="erro" id="erro-nome"></span> <!-- Campo de entrada para o nome do usuário, com validação obrigatória e um espaço para exibir mensagens de erro-->
-                        </div>
+    <main>
+        <section class="contato">
+            <h1>Entre em contato comigo</h1>
 
-                        <div class="campo">
+            <form id="form-contato" novalidate>
+                <!-- Identificador do formulário de contato, com a propriedade novalidate para desativar a validação padrão do navegador-->
+                <p>Preencha o formulário abaixo para entrar em contato comigo. Responderei o mais breve possível.</p>
 
-                            <label for="email">E-mail:</label>
-                            <input type="email" id="email" name="email" required placeholder="Digite seu e-mail válido@.com">
-                            <span class="erro" id="erro-email"></span> <!-- Campo de entrada para o e-mail do usuário, com validação obrigatória e um espaço para exibir mensagens de erro-->
-                         </div>
-                    
-                        <div class="campo">
-                            <label for="mensagem">Mensagem:</label>
-                            <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Digite sua mensagem"></textarea>
-                            <span class="erro" id="erro-mensagem"></span> <!-- Campo de entrada para a mensagem do usuário, com validação obrigatória e um espaço para exibir mensagens de erro-->
-                        </div>
+                <div class="campo"></div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+                <span class="erro" id="erro-nome"></span>
+                <!-- Campo de entrada para o nome do usuário, com validação obrigatória e um espaço para exibir mensagens de erro-->
+                </div>
 
-                    <button type="submit" id="botao-enviar" disabled>Enviar</button> <!-- Botão de envio do formulário, inicialmente desativado até que todos os campos sejam preenchidos corretamente-->
-                    <span class="sucesso" id="mensagem-sucesso"></span> <!-- Espaço para exibir uma mensagem de sucesso após o envio do formulário-->
+                <div class="campo">
 
-                </form>
-            </section>
-        </main>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required placeholder="Digite seu e-mail válido@.com">
+                    <span class="erro" id="erro-email"></span>
+                    <!-- Campo de entrada para o e-mail do usuário, com validação obrigatória e um espaço para exibir mensagens de erro-->
+                </div>
 
-             <footer>
-                 <p>&copy; 2026 Lucas Bernardo Gabriel. Todos os direitos reservados.</p>
-            </footer>
-    
-    
+                <div class="campo">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required
+                        placeholder="Digite sua mensagem"></textarea>
+                    <span class="erro" id="erro-mensagem"></span>
+                    <!-- Campo de entrada para a mensagem do usuário, com validação obrigatória e um espaço para exibir mensagens de erro-->
+                </div>
+
+                <button type="submit" id="botao-enviar" disabled>Enviar</button>
+                <!-- Botão de envio do formulário, inicialmente desativado até que todos os campos sejam preenchidos corretamente-->
+                <span class="sucesso" id="mensagem-sucesso"></span>
+                <!-- Espaço para exibir uma mensagem de sucesso após o envio do formulário-->
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Lucas Bernardo Gabriel. Todos os direitos reservados.</p>
+    </footer>
+
+
 </body>
+
 </html>
