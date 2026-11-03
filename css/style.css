@@ -143,6 +143,11 @@ button:disabled {
     font-size: 1.3rem;
 }
 
+.item-formacao a {
+    color: #e9d5ff;          /* Mesmo lilás claro do menu e dos cards */
+    font-weight: bold;
+}
+
 .instituicao {
     font-weight: bold;                           /* Destaca o nome da instituição */
 }
@@ -182,7 +187,15 @@ button:disabled {
     font-weight: bold;
 }
 
-
+.foto-perfil {
+    width: 180px;            /* Tamanho fixo da foto */
+    height: 180px;
+    object-fit: cover;       /* Ajuda a preencher o quadrado sem distorcer a imagem*/
+    border-radius: 50%;      /* 50% transforma o quadrado em círculo */
+    border: 4px solid var(--cor-principal);
+    margin-bottom: 1rem; 
+    display: block; 
+}
 
 @media (max-width: 600px) { /*Adicionando uma media query para telas menores que 600px*/
 
