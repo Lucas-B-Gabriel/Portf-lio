@@ -181,6 +181,9 @@ button:disabled {
     color: #e9d5ff;                                  /* Mesmo lilás claro do menu */
     font-weight: bold;
 }
+
+
+
 @media (max-width: 600px) { /*Adicionando uma media query para telas menores que 600px*/
 
     header {
